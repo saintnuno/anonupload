@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openID(event, 'settings')" id="defaultOpen">Settings</button>
+        <button class="tablinks" onclick="openID(event, 'upload')">Upload</button>
+    </div>
+
+
+    <div id="settings" class="tabcontent">
+        <h3 class="title">Settings</h3>
+        <hr />
+
+        <section>
+            <p class="title">Launch on startup</p>
+            <p class="subtitle">Launch Anonupload on system startup.</p>
+        </section>
+        <label class="switch">
+            <input id="check" type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <hr class="split" />
+        <section>
+            <p class="title">Auto-Copy</p>
+            <p class="subtitle">Automatically copy the link to your clipboard.</p>
+        </section>
+        <label class="switch">
+            <input id="checkc" type="checkbox">
+            <span class="sliderc"></span>
+        </label>
+    </div>
+
+
+    <div id="upload" class="tabcontent">
+        <h3 class="title">Upload</h3>
+        <hr />
+        <div id="holder">Drop files here</div>
+        <button class="up">Upload</button>
+        <input type="text" id="stats" readonly />
+    </div>
+
+    <script src="../static/js/openID.js"></script>
+    <script>require("./index.js")</script>
+</body>
+</html> 
