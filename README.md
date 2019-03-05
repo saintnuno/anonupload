@@ -9,7 +9,7 @@
 anonupload is an app created by Nuno. Using this app, you are able to upload files to anonfile.com with ease.
 
 ### Features
- * Upload directly to anonfile.com and retrieve link
+ * Upload directly to anonfile.com and retrieve the link
  * Turn auto-copy on/off
  * Ability to launch on startup
  
