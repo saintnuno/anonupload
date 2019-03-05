@@ -13,8 +13,8 @@ if (handleSquirrelEvent(app)) {
 let win
 
 function createWindow () {
-    win = new BrowserWindow({ width: 800, height: 500, resizable: true, minHeight: 400, minWidth: 600, icon: path.join(__dirname, 'static/images/log_Kz6_icon.ico') })
-
+    win = new BrowserWindow({ width: 800, height: 500, resizable: true, minHeight: 400, minWidth: 600, icon: path.join(__dirname, '/static/images/log2_zWV_icon.ico') })
+    
     win.setMenu(null);
   win.loadFile('view/index.html')
 
@@ -26,7 +26,6 @@ function createWindow () {
 }
 
 let b;
-
 if (data.getPrefs().prefs.launchOnStart === 'true') {
     b = true;
 } else {
