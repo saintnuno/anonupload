@@ -20,6 +20,7 @@ anonupload is an app created by Nuno. Using this app, you are able to upload fil
 
 ### Upcoming Features
  * MacOS Support
+ * Download feature
 
 Message me on discord (nuno#4160) if you have any questions. 
 If there are any bugs/issues, please report them.
