@@ -17,5 +17,9 @@ anonupload is an app created by Nuno. Using this app, you are able to upload fil
   <img src='https://i.ibb.co/PmDwWpM/anonuploadprev.png' width='700' alt='anonupload Settings' />
 </div>
 
+### Upcoming Features
+ * Light/Dark Theme
+ * MacOS Support
+
 Message me on discord (nuno#4160) if you have any questions. 
 If there are any bugs/issues, please report them.
