@@ -15,7 +15,7 @@ anonupload is an app created by Nuno. Using this app, you are able to upload fil
  * Light/Dark Toggle
  
  <div align='center'>
-  <img src='https://i.ibb.co/PmDwWpM/anonuploadprev.png' width='700' alt='anonupload Settings' />
+  <img src='https://i.ibb.co/nmNfpPy/anonuploadprev1.png' width='700' alt='anonupload Settings' />
 </div>
 
 ### Upcoming Features
