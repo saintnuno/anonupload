@@ -2,7 +2,7 @@
 <hr />
 
 <a href='https://github.com/Nuno135/anonupload/releases'>
-  Releases || v1.2.0
+  Releases || v1.2.1
 </a>
 
 ### Description
