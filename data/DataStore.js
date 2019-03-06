@@ -3,7 +3,7 @@ const Store = require('electron-store');
 class DataStore extends Store {
     constructor(settings) {
         super(settings)
-        this.prefs = this.get('prefs') || { "launchOnStart": "false", "autoCopy": "false"}
+        this.prefs = this.get('prefs') || { "launchOnStart": "false", "autoCopy": "false", "theme": "dark" }
     }
 
     savePrefs() {
@@ -12,7 +12,7 @@ class DataStore extends Store {
     }
 
     getPrefs() {
-        this.prefs = this.get('prefs') || { "launchOnStart": "false", "autoCopy": "false" }
+        this.prefs = this.get('prefs') || { "launchOnStart": "false", "autoCopy": "false", "theme": "dark" }
         return this
     }
 
@@ -23,6 +23,11 @@ class DataStore extends Store {
 
     setCopy(pref) {
         this.prefs.autoCopy = pref;
+        return this.savePrefs()
+    }
+
+    setTheme(pref) {
+        this.prefs.theme = pref;
         return this.savePrefs()
     }
 }

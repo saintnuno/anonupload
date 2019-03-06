@@ -1,5 +1,4 @@
 const { app, BrowserWindow } = require('electron');
-const config = require('./config.json');
 const path = require("path");
 const DataStore = require('./data/DataStore');
 

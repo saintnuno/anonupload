@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../static/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/main.css">
 </head>
+
 <body>
     <div class="tab">
         <button class="tablinks" onclick="openID(event, 'settings')" id="defaultOpen">Settings</button>
@@ -32,6 +34,15 @@
             <input id="checkc" type="checkbox">
             <span class="sliderc"></span>
         </label>
+        <hr class="split" />
+        <section>
+            <p class="title">Toggle Theme</p>
+            <p class="subtitle">Toggle between light and dark theme.</p>
+        </section>
+        <label class="switch">
+            <input id="checkt" type="checkbox">
+            <span class="slidert"></span>
+        </label>
     </div>
 
 
@@ -44,6 +55,9 @@
     </div>
 
     <script src="../static/js/openID.js"></script>
-    <script>require("./index.js")</script>
+    <script>
+        require("./index.js")
+    </script>
 </body>
-</html> 
+
+</html>
