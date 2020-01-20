@@ -91,25 +91,36 @@ if (data.getPrefs().prefs.theme === "light") {
     s.style.border = "1px solid white";
 }
 
-
-
 function upload() {
     var req = request.post('https://anonfile.com/api/upload', function (err, resp, body) {
         if (err) {
             alert(err);
         } else {
             body = JSON.parse(body);
-            if (data.getPrefs().prefs.autoCopy === "true") {
-                cb.clear();
-                cb.writeText(body.data.file.url.full);
-            }
-            var x = document.getElementById("stats");
-            x.setAttribute("value", body.data.file.url.full);
-            if (count < 1) {
-                if (x.style.display === "none") {
-                    x.style.display = "block";
+            //alert(body)
+            request(body.data.file.url.full, function(err, res, html) {
+                if (err) {
+                    alert(err)
+                } else {
+                    let crop = html.split('id="download-url"')[1];
+                    let newLink = crop.split('href="')[1].split('"')[0];
+                    //alert(newLink)
+                
+    
+                if (data.getPrefs().prefs.autoCopy === "true") {
+                    cb.clear();
+                    cb.writeText(newLink);
+                }
+                var x = document.getElementById("stats");
+                //alert(newLink)
+                x.setAttribute("value", newLink);
+                if (count < 1) {
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    }
                 }
             }
+            })
         }
     });
     var form = req.form();
